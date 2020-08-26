@@ -28,7 +28,7 @@ const Course = (props) => {
                      
         <div className="card-body" style={textStyle} >
             <p  className="card-title">{someInformation}</p>
-            <p  className="card-title" ><img src={img} alt="" srcset="" className="col-sm-3 col-md-6 col-lg-8"/></p>
+            <p  className="card-title" ><img src={img}  className="col-sm-3 col-md-6 col-lg-8"/></p>
             <p  className="card-text">Instructor: {teacher}</p>
             <p  className="card-text">Email Address: {email}</p>
             <p  className="card-text">Course Duration: {time}</p>

@@ -28,24 +28,24 @@ function App() {
    </nav>
    
    
-   <div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-pills card-header-pills">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Your Course </a>
+   <div className="card text-center">
+  <div className="card-header">
+    <ul className="nav nav-pills card-header-pills">
+      <li className="nav-item">
+        <a className="nav-link active" href="#">Your Course </a>
       </li>
     </ul>
   </div>
 
-  <div class="card-body" style={{fontFamily: 'Lobster'}}>
-        <h5 class="card-title">Total Course : {count.length}</h5>
-        <h5 class="card-text">Vat : ${vat}</h5>
-        <h5 class="card-text">Total Price : ${totalPrice}</h5>
+  <div className="card-body" style={{fontFamily: 'Lobster'}}>
+        <h5 className="card-title">Total Course : {count.length}</h5>
+        <h5 className="card-text">Vat : ${vat}</h5>
+        <h5 className="card-text">Total Price : ${totalPrice}</h5>
   </div>
 </div>
 
    {
-     userInformation.map(user => <Course handleUser={handleUser} user={user}></Course>)
+     userInformation.map(user => <Course handleUser={handleUser} key={user.id} user={user}></Course>)
    }
     </div>
   );
