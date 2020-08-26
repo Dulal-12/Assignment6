@@ -13,6 +13,8 @@ function App() {
        setCount(newCount);
   }
   let totalPrice = count.reduce((total,cd) => cd.courseFee+total,0);
+  let vat = parseFloat(totalPrice*(5/100).toFixed(2));
+  totalPrice = totalPrice+vat;
 
 
   return ( //navBar section and showing course this section and passing props
@@ -36,8 +38,9 @@ function App() {
   </div>
 
   <div class="card-body" style={{fontFamily: 'Lobster'}}>
-<h5 class="card-title">Total Course : {count.length}</h5>
-    <h5 class="card-text">Total Price : {totalPrice}</h5>
+        <h5 class="card-title">Total Course : {count.length}</h5>
+        <h5 class="card-text">Vat : ${vat}</h5>
+        <h5 class="card-text">Total Price : ${totalPrice}</h5>
   </div>
 </div>
 

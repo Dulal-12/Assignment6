@@ -33,7 +33,7 @@ const Course = (props) => {
             <p  className="card-text">Email Address: {email}</p>
             <p  className="card-text">Course Duration: {time}</p>
             <p  className="card-text" style={{fontSize:'25px',color:"purple"}}>Course Fee: ${courseFee}</p>
-            <button className="btn btn-danger" onClick={()=>props.handleUser(Course)}>Enroll Now</button>
+            <button className="btn btn-danger" onClick={()=>props.handleUser(Course)}>&#10157;Enroll Now</button>
         </div>
 </div>
     );
