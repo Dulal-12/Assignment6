@@ -64,6 +64,7 @@ var userInformation = [
                         course:'Simple C Programming Language',
                         someInformation :'Although numerous computer languages are used for writing computer applications, the computer programming language, C, is the most popular language worldwide. Everything from microcontrollers to operating systems is written in C ',
                         teacher:'Hafizul Islam',
+                        email:"hafizul@gmail.com",
                         img:'https://i.ibb.co/tHbG98Z/pic11.jpg',
                         time:'3 Months',
                         courseFee:130,
